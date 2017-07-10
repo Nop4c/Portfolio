@@ -60,6 +60,27 @@ text-decoration: none;
 	width: 100%;
 	max-width:100%;
 }
+
+.inner-banner {
+	position:absolute;
+	top:40%;
+	left:0;
+	width: :100%;
+	text-align: center;
+}
+.inner-banner h1{
+	color:#ffffff;
+	text-shadow: 1px 1px 20px #000000;
+
+}
+.inner-banner .btn-custom{
+	background-color: #3498DB;
+	color: #ffffff;
+}
+
+.inner-banner .btn-custom:hover{
+	background-color: #2C3E50;
+}
  /*about*/
 
 
