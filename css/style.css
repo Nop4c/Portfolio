@@ -21,6 +21,13 @@ text-decoration: none;
 	padding: 0;
 }
 
+.separator{
+	height: 3px;
+	width: 10%;
+	border: none;
+	background-color: #3498DB;
+}
+
  /*header*/
 .header{
 	background-color: #3498DB;
@@ -32,6 +39,7 @@ text-decoration: none;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 1px;
+	float: left;
 }
 
 .menu{
@@ -54,6 +62,7 @@ text-decoration: none;
 .ban{
 	width: 100%;
 	max-width:100%;
+	position:relative;
 }
 
 .ban img{
@@ -62,10 +71,10 @@ text-decoration: none;
 }
 
 .inner-banner {
-	position:absolute;
-	top:40%;
-	left:0;
-	width: :100%;
+	position: absolute;
+	top:45%;
+
+	width:100%;
 	text-align: center;
 }
 .inner-banner h1{
@@ -82,11 +91,49 @@ text-decoration: none;
 	background-color: #2C3E50;
 }
  /*about*/
+.about {
+	text-align: center;
+	padding-top:10%;
+}
 
+.about article{
+margin-top:10%;
+margin-bottom:10%;
+
+}
+.about article h2 {
+	text-align: center;
+}
 
  /*portefolio*/
 
+.portfolio {
+	background-color: #eeeeee;
+	height: 800px;
+}
+
+#portfolio{
+	text-align: center;
+
+}
+
+.portfolio .item-folio {
+	height: 280px;
+	background-color: #3498DB;
+
+}
+/*Contact*/
+
+.footer{
+	background-color: #2C3E50;
+
+}
+
+
+#contact{
+	color: #ffffff;
+	text-align: center;
+
+}
 
  /*footer*/
-
-
