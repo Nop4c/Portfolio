@@ -5,8 +5,8 @@
 
 
 body, html{
-padding: 0;
-margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 body{
@@ -14,7 +14,7 @@ body{
 }
 
 a, a:hover{
-text-decoration: none;
+	text-decoration: none;
 }
 
 .container-fluid{
@@ -25,12 +25,18 @@ text-decoration: none;
 	height: 3px;
 	width: 10%;
 	border: none;
-	background-color: #3498DB;
+	background-color: #2C3E50;
+}
+.separator2{
+	height: 3px;
+	width: 10%;
+	border: none;
+	background-color: #ffffff;
 }
 
- /*header*/
+/*header*/
 .header{
-	background-color: #3498DB;
+	background-color: #2C3E50;
 	height: 70px;
 	line-height: 70px;
 }
@@ -42,6 +48,10 @@ text-decoration: none;
 	float: left;
 }
 
+.logo a:hover{
+	color: #3498DB;
+	}
+
 .menu{
 	float: right;
 
@@ -51,10 +61,46 @@ text-decoration: none;
 	margin-right: 20px;
 }
 .menu a:hover{
-	color: #2C3E50;
+	color: #3498DB;
 }
 
- /*banniere*/
+/*banniere*/
+@keyframes ban{
+	0%{
+		left:0;
+	}
+	20%{
+		left:0;
+	}
+
+	25%{
+		left:-100%;
+	}
+
+	45%{
+		left:-100%;
+	}
+
+	50%{
+		left:-200%;
+	}
+
+	70%{
+		left:-200%;
+	}
+
+	75%{
+		left:-300%;
+	}
+
+	95%{
+		left:-300%;
+	}
+	100%{
+		left:0%;
+	}
+
+}
 .banner{
 	width: 100%;
 	max-width:100%;
@@ -63,11 +109,26 @@ text-decoration: none;
 	width: 100%;
 	max-width:100%;
 	position:relative;
+	overflow: hidden;
 }
 
 .ban img{
 	width: 100%;
 	max-width:100%;
+}
+.ban figure img{
+	width: 20%;
+	float: left;
+}
+
+.ban figure {
+	position: relative;
+	width: 500%;
+	margin :0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 20s ban infinite;
 }
 
 .inner-banner {
@@ -83,33 +144,40 @@ text-decoration: none;
 
 }
 .inner-banner .btn-custom{
-	background-color: #3498DB;
+	background-color: #2C3E50;
 	color: #ffffff;
 }
 
 .inner-banner .btn-custom:hover{
 	background-color: #2C3E50;
 }
- /*about*/
+/*about*/
 .about {
 	text-align: center;
 	padding-top:10%;
 }
 
 .about article{
-margin-top:10%;
-margin-bottom:10%;
+	margin-top:10%;
+	margin-bottom:10%;
 
 }
+
+.about article:hover{
+	background-color: #eeeeee;
+}
+
 .about article h2 {
 	text-align: center;
 }
 
- /*portefolio*/
+/*portefolio*/
 
 .portfolio {
+	padding-top:10%;
 	background-color: #eeeeee;
-	height: 800px;
+	height: 1500px;
+
 }
 
 #portfolio{
@@ -117,16 +185,32 @@ margin-bottom:10%;
 
 }
 
-.portfolio .item-folio {
-	height: 280px;
-	background-color: #3498DB;
+.portefolio article{
+	margin-top:10%;
+	margin-bottom:10%;
+}
 
+
+.portfolio .item-folio {
+	height: 380px;
+	background-color: #eeeeee;
+	text-align: center;
+
+}
+.portfolio article:hover{
+	background-color: #ffffff;
 }
 /*Contact*/
 
 .footer{
 	background-color: #2C3E50;
+	padding-top:10%;
+	height: 700px;
+}
 
+.lien{
+	text-align: center;
+	margin-bottom: :10%;
 }
 
 
@@ -136,4 +220,11 @@ margin-bottom:10%;
 
 }
 
- /*footer*/
+.collapse {
+  border-collapse: collapse;
+}
+.separate {
+  border-collapse: separate;
+}
+
+/*footer*/

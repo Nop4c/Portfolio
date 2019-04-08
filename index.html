@@ -2,25 +2,30 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Portefolio - Theo Capon</title>
-
-
-
-
-
+	<title>Portfolio - Theo Capon</title>
 	<link href='https://fonts.googleapis.com/css?family=Raleway:300,400,500,600' rel='stylesheet' type='text/css'> 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/circle.css">
+	<link rel="stylesheet" href="css/cssProgress.css">
+	<link rel="stylesheet" href="css/cssProgress.min.css">
+	<link rel="stylesheet" href="css/_card.scss">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 	<!--header-->
 	<header class="container-fluid header">
 		<div class="container">
-			<a href="#" class="logo"> Mon portfolio</a>
+			<div class="logo">
+			<a href="#" > Théo Capon</a>
+		</div>
 			<nav class="menu">
 				<a href="#">Accueil</a>
 				<a href="#about">A propos</a>
-				<a href="#portfolio">Portfolio</a>
+				<a href="#portfolio">Compétences</a>
 				<a href="#contact">Contact</a>
 			</nav>
 		</div>
@@ -30,11 +35,16 @@
 	<!-- banniére-->
 	<section class = "container-fluid banner">
 		<div class="ban">
-			<img src="img/ban.jpg" alt="banniere du site"/>
+		<figure>
+			<img src="img/ban.jpg" alt="banniere du site"/>	
+			<img src="img/ban3.jpg" alt="banniere du site"/>
+			<img src="img/ban4.jpg" alt="banniere du site"/>
+			<img src="img/ban5.jpg" alt="banniere du site"/>
+			</figure>
 		</div>
 		<div class="inner-banner">
 			<h1>Bienvenue sur mon portfolio</h1>
-			<button class="btn btn-custom"> Contactez-moi !</button>
+			<a href="#contact"><button class="btn btn-custom"> Contactez-moi !</button></a>
 		</div>
 	</section>
 	<!-- end banniére-->
@@ -45,22 +55,46 @@
 			<div class="row">
 				<h2 id="about"> A propos de moi</h2>
 				<hr class="separator">
+					<img src="img/profile.png"/>
+					</br></br></br>
+			<p>Je m'appelle <strong>Théo Capon</strong>, j'ai 22 ans et je viens de Lille. </br> 
+				Actuellement, j'étudie à l'école <strong>EPSI de Lille</strong> en 3éme année et je suis <strong>Alternant Développeur Web JAVA</strong> chez <strong> Novagile - Acticall Sitel </strong> </p>
 				<article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
 					<h2> Etudes </h2>
 					<p>
-						IUT informatique de Lille , Prepare a l'ecole d'ingenieur ICAM...
+						<strong>2017 - aujourd'hui :</strong>
+						EPSI Lille en alternance chez Novagile - Acticall Sitel </br>
+						<strong>2015 - 2017 :</strong>
+						IUT informatique de Lille - DUT obtenu</br>
+						<strong>2013 - 2015 :</strong>
+						Prépa intégrée à l'école d'ingenieur ICAM 
 					</p>
 				</article>
 				<article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
-					<h2> Expérience </h2>
-					<p>
-						Stage de 3 moi chez leder informatique ...
+					<h2> Expériences </h2>
+					<p><strong>09/2017 - aujourd'hui :</strong>
+							Alternance chez Novagile - Acticall Sitel en tant que développeur web. </br>
+							Novagile est un logiciel web de gestion relations clients</br>
+							Nous travaillons en méthode agile</br>
+							J'ajoute des fonctionnalités au logiciel web.
+							</br>
+					<strong>04/2017 - 07/2017 :</strong>
+						Stage de 3 mois chez Leader Informatique en tant que développeur Web:</br>
+							-Mise en oeuvre du framework Spring Security</br>
+							-Détecter, modifier, tester les injections SQL </br>
+							
+
 					</p>
 				</article>
 				<article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
 					<h2> Hobbies </h2>
 					<p>
-						Longboard Geek toussa ...
+						Sports de glisse : Longboard , Snowboard </br>
+						Sports collectifs : FootBall, BasketBall, VolleyBall</br>
+						Jeux de carte : Poker</br>
+						Jeux de rôle</br>
+						Jeux de PC
+
 					</p>
 				</article>
 			</div>
@@ -71,80 +105,145 @@
 	<!-- portfolio-->
 	<section class = "container-fluid portfolio">
 		<div class="container">
-		<h2 id="portfolio"> Mon portfolio </h2>
-			<hr class="separator">
-			<article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
-
+			<div class="row">
+				<br>
+				<h2 id="portfolio"> Mes compétences </h2>
+				<hr class="separator">
+				</br>
+				<article class="col-md-3 col-lg-4 col-xs-12 col-sm-12 item-folio">
+					<h4><strong>JAVA J2EE</strong></h4>
+						<div class="progress">
+ 							 <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:95%">
+    						95% 
+  						</div>
+					</div>
+					<p>C'est le langage que j'ai appris dès le début de l'IUT informatique. Durant ces 2 ans d'IUT et de ces nombreux travaux de groupe, j'ai pu acquérir de nombreuses compétences dans ce domaine. C'est donc en alternance que je continue dans le domaine du web au sein de la société <strong>Novagile du groupe Acticall Sitel</strong>. Grâce à tout cela, je maitrise le <strong>JAVA, J2EE, Apache Tomcat et divers framework comme Spring MVC, Hibernate</strong></p>
 			</article>
-
-			<article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
-
+			<article class="col-md-3 col-lg-4 col-xs-12 col-sm-12 item-folio">
+				<h4><strong>HTML CSS</strong></h4>
+				<div class="progress">
+ 					 <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+    				90% 
+  					</div>
+				</div>
+				<p>J'ai appris le HTML/CSS tout au long de mon cursus. Lors de mon stage de fin d'IUT Informatique j'ai pu apprendre d'autres manières de coder comme le <strong> JSP, ou le JSTL</strong>. Je sais utiliser aussi quelques <strong>Frameworks</strong> comme <strong>Bootstrap</strong> ou bien <strong>Thymeleaf</strong></p>
 			</article>
-			<article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
-
+			<article class="col-md-3 col-lg-4 col-xs-12 col-sm-12 item-folio">
+				<h4><strong>JAVA SCRIPT</strong></h4>
+				<div class="progress">
+ 					 <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%">
+    				55%
+  					</div>
+				</div>
+				<p>Durant mes 2 années à l'IUT, j'ai pu élaborer quelques projets en <strong>JavaScript</strong> notamment la création d'un jeu d'echec. De plus j'ai eu la chance d'utiliser le <strong>JQuery</strong> pour divers sites web afin d'avoir une finalité dynamique</p>
 			</article>
-			<article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
-
+			
+			<article class="col-md-3 col-lg-4 col-xs-12 col-sm-12 item-folio">
+				<h4><strong>PHP</strong></h4>
+				<div class="progress">
+ 					 <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+    				65% 
+  					</div>
+				</div>
+				<p> C'est à l'entrée de L'EPSI que j'ai commencé à coder en <strong>PHP</strong>, grâce à un concours entre les autres campus, nous avons dû développer une application web qui permettait la gestion des RDV des clients. J'ai su faire tous le <strong>back-end</strong> du site web en PHP et nous sommes arrivés 2éme sur 12 de notre campus</p>
 			</article>
-			<article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
-
+			<article class="col-md-3 col-lg-4 col-xs-12 col-sm-12 item-folio">
+				<h4><strong>RESEAU</strong></h4>
+				<div class="progress">
+ 					 <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+    				60% 
+  					</div>
+				</div>
+				<p> C'est à l'IUT que j'ai exploité les capacités <strong>d'UNIX</strong> et grâce à des projets comme la réalisation d'un <strong>serveur web</strong> ou la réalisation d'un <strong>portail captif</strong>, j'ai pu acquérir les doubles compétences dans le domaine de l'informatique. Le développement et le réseau.</p>
 			</article>
-			<article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
-
+			<article class="col-md-3 col-lg-4 col-xs-12 col-sm-12 item-folio">
+				<h4><strong>SQL</strong></h4>
+				<div class="progress">
+ 					 <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+    				75% 
+  					</div>
+				</div>
+				<p>C'est depuis le début de mon cursus informatique que je pratique le SQL. Je sais utiliser <strong>PostgreSQL, MySQL, ou bien même Oracle</strong>. De plus j'ai eu l'occasion d'utiliser d'autres outils comme <strong>HeidiSQL ou MySQL Workbench</strong></p>
 			</article>
-			<article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
-
+			<article class="col-md-3 col-lg-4 col-xs-12 col-sm-12 item-folio">
+				<h4><strong>SECURITE</strong></h4>
+				<div class="progress">
+ 					 <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+    				60% 
+  					</div>
+				</div>
+				<p>Lors de mon stage de DUT Informatique dans la société Leader Informatique, (une société qui propose des solutions full web pour les assurances ou courtier) j'ai pu me spécialiser dans le domaine de sécurité en installant le framwork <strong>Spring Security</strong>. Je me suis aussi occuper de la <strong>detection, correction et test des injections sql</strong>. J'utilise l'OS <strong>Kali Linux</strong> pour m'entrainer à gèrer les sécurités des sites web </p>
 			</article>
-			<article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
-
+			<article class="col-md-3 col-lg-4 col-xs-12 col-sm-12 item-folio">
+				<h4><strong>COMMUNICATION</strong></h4>
+				<div class="progress">
+ 					 <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+    				60% 
+  					</div>
+				</div>
+				J'aime travailler en groupe, durant mes 2 années à l'IUT, j'ai pu participer a de nombreux <strong>projet de groupe</strong>. De plus, j'ai déjà intégré plusieurs <strong>équipe de développeur</strong>, j'aime l'entraide qu'il peut y avoir au sein d'une équipe.
 			</article>
+				<article class="col-md-3 col-lg-4 col-xs-12 col-sm-12 item-folio">
+				<h4><strong>ANGLAIS</strong></h4>
+				<div class="progress">
+ 					 <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+    				60% 
+  					</div>
+  				</div>
+				Après ma prépa intégrée à L'ICAM, j'ai passé 3 mois à <strong>Londres</strong> dans une auberge de jeunesse en tant que <strong>House Keeper</strong> dans le but d'améliorer mon niveau d'anglais. En plus de ce métier je prenais en même temps des cours dans les écoles de Londres.
+			</article>	
 		</div>
-
-
+	</div>
 	</section>
 	<!-- end portfolio-->
 
 	<!-- footer-->
 	<section class = "container-fluid footer">
 		<div class="container">
-
 			<div class="row">
 			<h2 id="contact"> Contactez-moi !</h2>
-				<hr class="separator">
+				<hr class="separator2">
+				<br>
+				<div class="lien">
+					<a href="CVTheo.pdf"><button class="btn btn-primary btn-lg"> CV </button></a> 
+					<a href="https://linkedin.com/in/théo-capon-57328a142"><button class="btn btn-primary btn-lg"> Linkedin </button></a><br>
+					</div>
+					<br>
 				<div class="col-md-6 col-md-offset-3">
+					
 					<div class="well well-sm">
 						<form class="form-horizontal" action="" method="post">
 							<fieldset>
-								<legend class="text-center">Contact us</legend>
+								<legend class="text-center"></legend>
 
 								<!-- Name input-->
 								<div class="form-group">
-									<label class="col-md-3 control-label" for="name">Name</label>
+									<label class="col-md-3 control-label" for="name">Nom</label>
 									<div class="col-md-9">
-										<input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+										<input id="name" name="name" type="text" placeholder="Votre nom" class="form-control">
 									</div>
 								</div>
 
 								<!-- Email input-->
 								<div class="form-group">
-									<label class="col-md-3 control-label" for="email">Your E-mail</label>
+									<label class="col-md-3 control-label" for="email">Votre E-mail</label>
 									<div class="col-md-9">
-										<input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+										<input id="email" name="email" type="text" placeholder="Votre email" class="form-control">
 									</div>
 								</div>
 
 								<!-- Message body -->
 								<div class="form-group">
-									<label class="col-md-3 control-label" for="message">Your message</label>
+									<label class="col-md-3 control-label" for="message">Votre message</label>
 									<div class="col-md-9">
-										<textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+										<textarea class="form-control" id="message" name="message" placeholder="Entrez votre message ici" rows="5"></textarea>
 									</div>
 								</div>
 
 								<!-- Form actions -->
 								<div class="form-group">
 									<div class="col-md-12 text-right">
-										<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+										<button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
 									</div>
 								</div>
 							</fieldset>
@@ -155,9 +254,7 @@
 
 		</div>
 
-
 	</section>
 	<!-- end footer-->
-
 </body>
 </html>
